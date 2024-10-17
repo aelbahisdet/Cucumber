@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.demoframework.runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 30.31 s <<< FAILURE! -- in com.demoframework.runners.TestRunner
+Sauce Demo login.Empty password -- Time elapsed: 2.911 s <<< ERROR!
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.sendKeys(Unknown Source)
+	at com.demoframework.utils.CommonMethods.sendText(CommonMethods.java:39)
+	at com.demoframework.steps.LoginSteps.user_leave_password_empty(LoginSteps.java:37)
+	at ✽.user leave password empty(file:///C:/Users/d-achraf.elbahi/eclipse-workspace/AutomationFramework/src/test/resources/features/Login.feature:14)
+
